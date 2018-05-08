@@ -1,30 +1,28 @@
-import React, { Component } from 'react'
-import { Dropdown, Grid, Segment, Input, Icon } from 'semantic-ui-react'
-
-
+import React, {Component} from "react";
+import {Dropdown, Grid, Segment, Input, Icon} from "semantic-ui-react";
 
 export default class CourseDropDown extends Component {
-  state = {}
+  state = {};
 
-  handleChange = (e , data) => {
-    console.log(data)
-    this.props.setCourse(data.value)
-    this.props.increment()
-  }
+  handleChange = (e, data) => {
+    console.log(data);
+    this.props.setCourse(data.value);
+    this.props.increment();
+  };
 
   render() {
     const options = [
-        { key: 1, text: 'Calculus I', value: 'Calculus I' },
-        { key: 2, text: 'Calculus II', value: 'Calculus II' },
-        { key: 3, text: 'Calculus III', value: 'Calculus III' }
-      ]
+      {key: 1, text: "Calculus I", value: "Calculus I"},
+      {key: 2, text: "Calculus II", value: "Calculus II"},
+      {key: 3, text: "Calculus III", value: "Calculus III"}
+    ];
 
     return (
       <Grid columns={2}>
         <Grid.Column>
           <Input placeholder="Course Name" icon onChange={this.handleChange}>
             <input />
-            <Icon name='tag' />
+            <Icon name="tag" />
           </Input>
         </Grid.Column>
         <Grid.Column>
@@ -33,7 +31,7 @@ export default class CourseDropDown extends Component {
           </Segment>
         </Grid.Column>
       </Grid>
-    )
+    );
   }
 }
 
@@ -43,7 +41,6 @@ const e ={ target:{value:....}}`
  `this.state={value:....}
 
 */
-
 
 /*
 <Dropdown
