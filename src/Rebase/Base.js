@@ -15,7 +15,7 @@ const prodConfig = {
   authDomain: "testquery-production.firebaseapp.com",
   databaseURL: "https://testquery-production.firebaseio.com",
   projectId: "testquery-production",
-  storageBucket: "",
+  storageBucket: "testquery-production.appspot.com",
   messagingSenderId: "762603203870"
 };
 

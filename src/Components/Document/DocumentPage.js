@@ -39,11 +39,11 @@ class DocumentPage extends Component {
     const {open, openedImageSrc} = this.state;
     const document = data.filter(item => item.id === openedDocument);
     const images = document.map(item =>
-      item.documents.map(img => (
+      item.documents.map((img,index) => (
         <Image
           onClick={() => this.show(img)}
           spaced
-          label={" "}
+          label={`${index + 1}`}
           wrapped
           centered
           size="medium"
