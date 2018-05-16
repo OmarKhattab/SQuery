@@ -18,7 +18,7 @@ assignment.
 
 * [React](https://reactjs.org/)
 * [Firebase](https://firebase.google.com/)
-* [re-base]("https://github.com/tylermcginnis/re-base")
+* [re-base](https://github.com/tylermcginnis/re-base/)
 
 ## Author
 
