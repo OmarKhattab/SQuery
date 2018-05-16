@@ -166,9 +166,9 @@ class Uploadimage extends Component {
             description={this.state.description}
             score={this.state.score}
           />
-          <Button icon="upload" onClick={this._handleSubmit}>
+        {/*   <Button icon="upload" onClick={this._handleSubmit}>
             Submit
-          </Button>
+          </Button> */ }
           <Tos />
         </Container>
       </div>
